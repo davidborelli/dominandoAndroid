@@ -124,3 +124,13 @@ _Mapeamento dos recursos na classe R e no XML_
   </tr>
 </table>
 </p>
+
+#### Processo de compilação
+
+<p>
+  Para realizar a compilação do aplicativo, o Android Studio utiliza o <strong>Gradle</strong>, poderosa ferramenta de automação e gerenciamento do processo de build da aplicação
+</p>
+
+<p>
+  Cada projeto no Android Studio, por padrão, possui pelo menos dois arquivos *build.gradle*
+</p>
