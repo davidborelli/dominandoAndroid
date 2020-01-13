@@ -2,6 +2,9 @@
 
 <p>Repositório criado com o intuito de desenvolver os exercícios propostos no livro <strong>DOMINANDO O ANDROID com Kotlin</strong> de <strong>Nelson Glauber</strong> </p>
 
+- <strong>Guia
+  - [Arquivos e recursos](#arquivos-e-recursos)
+
 ## Introduçao
 
 <p>Abaixo uma tabela com suas versões e respectivas API Level, à partir do Android Kit Kat</p>
