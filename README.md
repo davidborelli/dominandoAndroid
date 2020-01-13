@@ -132,5 +132,55 @@ _Mapeamento dos recursos na classe R e no XML_
 </p>
 
 <p>
-  Cada projeto no Android Studio, por padrão, possui pelo menos dois arquivos *build.gradle*
+  Cada projeto no Android Studio, por padrão, possui pelo menos dois arquivos <strong>build.gradle</strong>, um na raiz do projeto e outro em cada módulo. Ao criar um projeto, apenas o módulo app é criado, então o primeiro arquivo se encontra lá, e o outro na raiz do projeto. </br>
+  Informações como número da versão, nome da versão, versão do API Level ficam no build.gradle dentro da pasta do módulo.
+</p>
+
+#### Orientação e resolução de tela
+
+<table>
+  <tr>
+    <th><strong>Classificação</strong></th>
+    <th><strong>Tamanho mínimo</strong></th>
+  </tr>
+  <tr>
+    <td>small</td>
+    <td>426 dp x 320 dp</td>
+  </tr>
+  <tr>
+    <td>normal</td>
+    <td>470 dp x 320 dp</td>
+  </tr>
+  <tr>
+    <td>large</td>
+    <td>640 dp x 480 dp</td>
+  </tr>
+  <tr>
+    <td>xlarge</td>
+    <td>960 dp x 720 dp</td>
+  </tr>
+</table>
+
+<p>
+  As medidas são definidos em DP 
+  (ou DIP - Density Independent Pixels), que é uma unidade de medida que 
+  leva em consideração a quantidade de pixels na sua área física. </br>
+
+Para saber quantos DP uma tela tem, existe a seguinte fórmula: </br>
+dp = pixels / (dpi / 160) </br>
+
+Por exemplo, qual o tamanho da tela em dp de uma aparelho com resolução
+de 1024 por 768 pixels com densidade HDPI (240dpi)? </br>
+
+dp = 1024 / (240 / 160) </br>
+dp = 1024 / 1,5 </br>
+dp = 680 </br>
+
+dp = 768 / (240 / 160) </br>
+dp = 768 / 1,5 </br>
+dp = 512 </br>
+
+Com base nos cálculos acima podemos constatar que a tela tem 680 dp x 512 dp
+, ou seja, é considerada large.
+
 </p>
