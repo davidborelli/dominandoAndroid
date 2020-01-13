@@ -184,3 +184,58 @@ Com base nos cálculos acima podemos constatar que a tela tem 680 dp x 512 dp
 , ou seja, é considerada large.
 
 </p>
+
+## CAPÍTULO 02
+
+<table>
+  <tr>
+    <th><strong>Clase</strong></th>
+    <th><strong>Característica principal</strong></th>
+  </tr>
+  <tr>
+    <td>FrameLayout</td>
+    <td>É o layoyt mais simples, Permite adicionar componentes um
+    sobre o outro e o alinhamento só pode ser feito pelas bordas do layout
+    (topo, inferior, esquerda, direita) ou centralizado.</td>
+  </tr>
+  <tr>
+    <td>RelativeLayout</td>
+    <td>Faz o mesmo que o FrameLayout, mas permite alinhar os componentes
+    um em relação ao outro.</td>
+  </tr>
+  <tr>
+    <td>LinearLayout</td>
+    <td>Permite adicionar os componentes sequencialmente na horizontal
+    ou na vertical.</td>
+  </tr>
+  <tr>
+    <td>TableLayout</td>
+    <td>Organiza o layout em forma de tabela, onde cada componente
+    representa uma coluna e pode ocupar duas ou mais colunas.</td>
+  </tr>
+  <tr>
+    <td>ScrollView </br> HorizontalScrollView</td>
+    <td>Permite fazer rolagem na tela quando não houver espaço
+    suficiente para todos os componentes.</td>
+  </tr>
+  <tr>
+    <td>FlexBoxLayout</td>
+    <td>Faz o mesmo que o LinearLayout, mas permite a "quebra de linha
+    /coluna" quando não há espeço suficiente para o componente.</td>
+  </tr>
+  <tr>
+    <td>GridLayout</td>
+    <td>Similar ao TableLayout, mas permite que um componente ocupe mais
+    de uma linha.</td>
+  </tr>
+  <tr>
+    <td>ConstraintLayout</td>
+    <td>Permite alinhar os componentes baseados em regras.</td>
+  </tr>
+</table>
+
+<p>
+  Os cinco primeiros gerenciadors de layout são padrão da plataforma desde
+  as primeiras versões do Android, enquanto os três últimos devem ser
+  adicionados no </strong>build.gradle</strong> para serem utilizados.
+</p>
