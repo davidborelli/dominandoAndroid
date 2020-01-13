@@ -71,3 +71,56 @@ Todas as activities da aplicação que serão exibidas para o usuário deverão 
 A ação <strong>android.intent.action.MAIN</strong> indica que essa activity é o ponto de entrada da aplicação, e **android.intent.category.LAUNCHER** indica que a activity aparecerá na lista de aplicações do aparelho.
 
 </p>
+
+#### Arquivos e recursos
+
+<p>
+Todos os recursos da aplicação (imagem, textos, layouts e etc) ficam localizados na pasta <strong>app/src/main/res</strong> e cada um deles é mapeado em um indentificador diferente na classe R, que é gerada automaticamente. </br>
+
+Por exemplo, para acessar o arquivo <strong>res/mipmap-mdpi/ic_launcher.png</strong> no Kotlin seria da seguinte forma: <strong>R.mipmap.ic_launcher</strong>, e para acessar essa mesma imagem em um arquivo xml, como o AndroidManifest.xml, seria: <strong>@mipmap/ic_launcher</strong>
+
+</p>
+
+<p>
+Todos os textos da aplicação ficam em <strong>res/values/strings.xml</strong>
+
+_Mapeamento dos recursos na classe R e no XML_
+
+<table>
+  <tr>
+    <th>Recurso</th>
+    <th>ID da classe R</th>
+    <th>Em arquivos XML</th>
+  </tr>
+  <tr>
+    <td>res/mipmap/ic_launcher.png</td>
+    <td>R.mipmap.ic_launcher</td>
+    <td>@mipmap/ic_launcher</td>
+  </tr>
+  <tr>
+    <td>res/drawable/imagem.png</td>
+    <td>R.drawable.imagem</td>
+    <td>@drawable/imagem</td>
+  </tr>
+  <tr>
+    <td>res/layout/activity_main.xml</td>
+    <td>R.layout.activity_main</td>
+    <td>@layout/activity_main</td>
+  </tr>
+  <tr>
+    <td>res/menu/menu_main.xml</td>
+    <td>R.menu.menu_main</td>
+    <td>@menu/menu_main</td>
+  </tr>
+  <tr>
+    <td>res/values/string.xml < string name="ola"> </td>
+    <td>R.string.ola</td>
+    <td>@string/ola</td>
+  </tr>
+  <tr>
+    <td>res/values/dimens.xml < dimen name="margem"></td>
+    <td>R.dimen.margem</td>
+    <td>@dimen/margem</td>
+  </tr>
+</table>
+</p>
