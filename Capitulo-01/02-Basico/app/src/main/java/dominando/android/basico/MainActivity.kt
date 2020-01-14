@@ -3,8 +3,6 @@ package dominando.android.basico
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
-import android.widget.EditText
 import android.widget.Toast
 
 import kotlinx.android.synthetic.main.activity_main.*
@@ -35,6 +33,19 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, Tela2Activity::class.java)
             intent.putExtra("nome", "David Borelli")
             intent.putExtra("idade", 30)
+            startActivity(intent)
+        }
+
+        buttonParcel.setOnClickListener {
+            val cliente = Cliente(1, "David")
+            val intent = Intent(this, Tela2Activity::class.java)
+            intent.putExtra("cliente", cliente)
+            startActivity(intent)
+        }
+
+        buttonSerializable.setOnClickListener {
+            val intent = Intent(this, Tela2Activity::class.java)
+            intent.putExtra("pessoa", Pessoa("David", 30))
             startActivity(intent)
         }
     }
