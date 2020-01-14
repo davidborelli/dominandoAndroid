@@ -1,5 +1,6 @@
 package dominando.android.basico
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -28,6 +29,13 @@ class MainActivity : AppCompatActivity() {
         buttonToast.setOnClickListener {
             val texto = editTexto.text.toString()
             Toast.makeText(this, texto, Toast.LENGTH_SHORT).show()
+        }
+
+        buttonTela2.setOnClickListener {
+            val intent = Intent(this, Tela2Activity::class.java)
+            intent.putExtra("nome", "David Borelli")
+            intent.putExtra("idade", 30)
+            startActivity(intent)
         }
     }
 }
